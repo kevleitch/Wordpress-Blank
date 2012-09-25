@@ -1,0 +1,92 @@
+/*
+ BRAND Website
+ -------------------------
+ Built by: Kev Leitch, Dusk Web Design
+ For: AGENCY
+ Built in: MMMM YYYY
+*/
+// Clearfix
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+// Center-align a block level element
+.center-block() {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// IE7 inline-block
+.ie7-inline-block() {
+  *display: inline;
+  *zoom: 1;
+}
+
+// Drop shadow
+.drop-shadow(@x-axis: 0, @y-axis: 0, @blur: 30px, @alpha: 0.3) {
+  -webkit-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  -moz-box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+  box-shadow: @x-axis @y-axis @blur rgba(0, 0, 0, @alpha);
+}
+
+// Rounded corners
+.rounded(@radius: 2px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box; 
+}
+
+// Opacity - makes content within the opaque element opaque too
+.opacity(@opacity: 0.5) {
+  -moz-opacity: @opacity;
+  -khtml-opacity: @opacity;
+  -webkit-opacity: @opacity;
+  opacity: @opacity;
+}
+
+// Background opacity - doesn't make content within the opaque element go opaque
+.background-opacity(@opacity: 0.5) {
+  -moz-opacity: 0.5;
+  filter:alpha(opacity=50);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#26000000, endColorstr=#26000000)";
+  background: rgba(0, 0, 0, 0.5);
+  zoom: 1;
+}
+
+// Misc
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;  
+}
+
+.fixwidthandcenter() {
+  .center-block();
+  width: 940px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.txtreplace {
+  font: 0/0 a;
+  text-shadow: none;
+  color: transparent;
+}
+
+.text-shadow (@string: 0 1px 3px rgba(0, 0, 0, 0.25)) {
+  text-shadow: @string;
+}

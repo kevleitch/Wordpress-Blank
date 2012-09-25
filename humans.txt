@@ -1,0 +1,11 @@
+/* TEAM */                            
+	Front End Web Developer: Kev Leitch - List work done here      
+	Contact: kev@duskwebdesign.co.uk, http://duskwebdesign.co.uk                            
+	Twitter: @duskwebdesign.                        
+	From: Wantage, OXON, UK.
+
+/* SITE */                            
+	Last update: yyyy/mm/dd                             
+	Standards: HTML5, CSS3.                         
+	Components: jQuery, LESS.                           
+	Software: List used software here
